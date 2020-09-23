@@ -20,6 +20,7 @@
     "css-loader": "3.4.2",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
+    "env-cmd": "^10.1.0",
     "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "3.0.3",
@@ -64,7 +65,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "build:dev": "env-cmd -f .env.development node scripts/build.js",
+    "build:pro": "env-cmd -f .env.production node scripts/build.js"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import { DatePicker } from 'antd';
 
 class Home extends Component {
     constructor(props) {
@@ -24,6 +25,7 @@ class Home extends Component {
         return ( 
             <div>
                 home page
+                <DatePicker />
             </div>
          );
     }
